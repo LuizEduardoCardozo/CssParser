@@ -1,5 +1,4 @@
 # CssParser
----
 Solução para um interpretador de css feito em python.
 
 Será utilizado em projetos futuros, em conjunto com o 2JSON
