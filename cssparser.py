@@ -34,3 +34,13 @@ def stylesSheetParser(styles_file):
             line = removeIdentation(line)
             codes.append(line[:len(line)-2])
     return (insideCode)
+
+def getCssClasses(styles_file):
+    classes = []
+    for line in (stylesSheetParser(styles_file)):
+        if(line != []):
+            title = line[0]
+            if(title[0] == "."):
+                classes.append(title[1:])
+
+    return list(dict.fromkeys(classes))
